@@ -1,0 +1,32 @@
+.about {
+  padding-bottom: 0;
+
+  &__list {
+    display: flex;
+  }
+  &__item {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+  &__label {
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--headers);
+  }
+  &__description {
+    line-height: 1.71;
+  }
+  &__thumb {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    background-color: rgba(245, 244, 250, 1);
+  }
+}
